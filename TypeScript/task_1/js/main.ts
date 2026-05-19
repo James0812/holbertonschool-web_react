@@ -29,3 +29,21 @@ const director1: Directors = {
 
 console.log(teacher3);
 console.log(director1);
+
+// ------------------------------
+// TÂCHE 3 : printTeacher
+// ------------------------------
+
+// Interface pour la fonction
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// Implémentation de la fonction
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+// Test
+console.log(printTeacher("John", "Doe")); // J. Doe
+
