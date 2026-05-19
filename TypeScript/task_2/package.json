@@ -1,14 +1,15 @@
 {
   "name": "task_2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "ts-loader": "^9.5.7",
     "typescript": "^6.0.3",
@@ -17,9 +18,3 @@
   }
 }
 
-{
-  "scripts": {
-    "build": "webpack"
-  }
-
-}
