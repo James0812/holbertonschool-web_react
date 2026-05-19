@@ -13,7 +13,7 @@ import "./subjects/Java";
 
 namespace Subjects {
   // Création d’un teacher
-  export const teacher: Teacher = {
+  export const teacher: Subjects.Teacher = {
     firstName: "Guillaume",
     lastName: "Salva",
     experienceTeachingC: 10,
@@ -22,21 +22,21 @@ namespace Subjects {
   };
 
   // Cpp
-  const cpp = new Cpp();
+  const cpp = new Subjects.Cpp();
   cpp.setTeacher(teacher);
   console.log("Cpp:");
   console.log(cpp.getRequirements());
   console.log(cpp.getAvailableTeacher());
 
   // React
-  const react = new React();
+  const react = new Subjects.React();
   react.setTeacher(teacher);
   console.log("React:");
   console.log(react.getRequirements());
   console.log(react.getAvailableTeacher());
 
   // Java
-  const java = new Java();
+  const java = new Subjects.Java();
   java.setTeacher(teacher);
   console.log("Java:");
   console.log(java.getRequirements());
