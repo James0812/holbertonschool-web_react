@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "preserveConstEnums": true,
+
+    "outDir": "./dist",        // <-- IMPORTANT
+    "rootDir": "./",           // <-- IMPORTANT
+    "types": []
+  },
+
+  "include": ["task_1/**/*.ts"],   // <-- IMPORTANT
+  "exclude": ["node_modules"]
+}
+
