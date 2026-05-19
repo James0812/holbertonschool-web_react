@@ -1,8 +1,4 @@
-import "./subjects/Teacher";
-import "./subjects/Subject";
-import "./subjects/Cpp";
-import "./subjects/React";
-import "./subjects/Java";
+import "./subjects/index";
 
 /// <reference path="./subjects/Teacher.ts" />
 /// <reference path="./subjects/Subject.ts" />
@@ -10,7 +6,6 @@ import "./subjects/Java";
 /// <reference path="./subjects/React.ts" />
 /// <reference path="./subjects/Java.ts" />
 
-// Création du teacher
 const teacher: Subjects.Teacher = {
   firstName: "Guillaume",
   lastName: "Salva",
@@ -19,24 +14,20 @@ const teacher: Subjects.Teacher = {
   experienceTeachingJava: 2,
 };
 
-// Cpp
 const cpp = new Subjects.Cpp();
 cpp.setTeacher(teacher);
 console.log("Cpp:");
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
-// React
 const react = new Subjects.React();
 react.setTeacher(teacher);
 console.log("React:");
 console.log(react.getRequirements());
 console.log(react.getAvailableTeacher());
 
-// Java
 const java = new Subjects.Java();
 java.setTeacher(teacher);
 console.log("Java:");
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
-
